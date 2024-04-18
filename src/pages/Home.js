@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
-import './Home.css';
+import './Home.sass';
 
 function Home() {
     return (
