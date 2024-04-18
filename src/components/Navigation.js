@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Navigation.sass';
 
 function Navigation() {
+    const [showNav, setShowNav] = useState(true);
+    let lastScrollY = window.pageYOffset;
+    let isScrollingUp = false;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.pageYOffset;
+            isScrollingUp = currentScrollY < lastScrollY;
+            setShowNav(isScrollingUp || currentScrollY < 50);
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" className={showNav ? "" : "navbar-hidden"}>
             <Container>
                 <Navbar.Brand href="#home">
                     <img
