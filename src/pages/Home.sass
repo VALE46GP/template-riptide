@@ -1,11 +1,3 @@
-.hero-image
-  position: relative
-  img
-    width: 100vw
-    height: auto
-    max-width: 100%
-    margin-left: calc(-50vw + 50%)
-
 .content
   position: relative
   z-index: 1
@@ -13,6 +5,13 @@
 .calendar-container
   position: relative
   overflow: hidden
+  padding-top: 56.25%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 @media (max-width: 768px)
   .calendar-container iframe
