@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import './Home.sass';
+import Calendar from '../components/Calendar';
 
 function Home() {
     return (
@@ -22,10 +23,7 @@ function Home() {
                 <Col lg={12}>
                     <h2>Calendar</h2>
                     <div className="calendar-container">
-                        <iframe
-                            src="https://calendar.google.com/calendar/embed?src=your-calendar-id%40group.calendar.google.com&ctz=America%2FNew_York"
-                            style={{ border: '0', frameBorder: '0', scrolling: 'no' }}
-                        ></iframe>
+                        <Calendar />
                     </div>
                 </Col>
             </Row>
