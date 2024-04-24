@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import './Home.sass';
 import Calendar from '../components/Calendar';
 import Hero from '../components/Hero';
+import GoogleMap from '../components/GoogleMap';
 
 function Home() {
     return (
@@ -27,15 +28,8 @@ function Home() {
                 </Col>
             </Row>
             <Row id="directions" className="my-4">
-                <Col lg={6}>
-                    <h2>Directions</h2>
-                    <Image src="https://template-riptide.s3.us-west-1.amazonaws.com/home-ltaraval-OLD-v2.jpg" alt="Historical Streetcar" fluid />
-                </Col>
-                <Col lg={6}>
-                    <h2>Press</h2>
-                    <Image src="https://template-riptide.s3.us-west-1.amazonaws.com/home-niteys-OLD.jpg" alt="Award" fluid />
-                    <p>Nitey Awards</p>
-                    <p>The Riptide was voted Nitey Awards Best Neighborhood Bar in San Francisco 2 years in a row.</p>
+                <Col lg={12}>
+                    <GoogleMap />
                 </Col>
             </Row>
             <Row id="photos" className="my-4">
