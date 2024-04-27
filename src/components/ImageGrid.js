@@ -12,7 +12,7 @@ function ImageGrid({ imageURLs }) {
                      onClick={() => setModalUrl(url)}>
                 </div>
             ))}
-            {modalUrl && <ImageModal url={modalUrl} onClose={() => setModalUrl(null)} />}
+            {modalUrl && <ImageModal style={{ opacity: 1 }} url={modalUrl} onClose={() => setModalUrl(null)} />}
         </div>
     );
 }
