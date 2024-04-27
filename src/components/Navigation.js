@@ -20,6 +20,11 @@ function Navigation() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        document.documentElement.style.setProperty('--nav-height', `${navbarHeight}px`);
+    }, []);
+
     return (
         <Navbar bg="dark" variant="dark" expand="lg" className={showNav ? "" : "navbar-hidden"}>
             <Container>
