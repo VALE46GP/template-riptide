@@ -13,7 +13,7 @@ function Home() {
                 <Row className="home__section">
                     <Col lg={12}>
                         <p><strong>The Riptide</strong> is the Bay Area's best little honky-tonk by the beach. Located in the Sunset District of San Francisco, it was built in 1941 and has the look and feel of a small town lodge. In addition to rustic brick flooring and high ceilings, the original knotty pine walls and raging fireplace add warmth you can feel as soon as you step inside.</p>
-                        <p>The Riptide opens at 3 P.M. daily. If you’re looking for a casual atmosphere and a conversation or two with the local neighbors, stop by for Happy Hour, Monday through Friday, from 3 P.M. to 7 P.M. featuring honest drink specials.</p>
+                        <p>The Riptide opens at 3 P.M. daily. If you're looking for a casual atmosphere and a conversation or two with the local neighbors, stop by for Happy Hour, Monday through Friday, from 3 P.M. to 7 P.M. featuring honest drink specials.</p>
                         <p>Enjoy some of the best touring and local music acts including bluegrass, jazz, blues, solo acoustic, and country. Check the calendar for events or just wander in anytime.</p>
                         <p>The Riptide is only 20 minutes from the heart of San Francisco, one block away from the Pacific Ocean, half a block from public transportation with plenty of free parking.</p>
                         <Image className="home__image" src="https://template-riptide.s3.us-west-1.amazonaws.com/home-hero-OLD-v2.jpg" alt="Riptide interior" />
@@ -21,7 +21,6 @@ function Home() {
                 </Row>
                 <Row className="home__section">
                     <Col lg={12}>
-                        <h2>Calendar</h2>
                         <div className="home__calendar-container">
                             <Calendar />
                         </div>
