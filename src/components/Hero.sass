@@ -42,16 +42,16 @@
         color: gold  // Using the same gold color as the logo
         animation: HeroBounce 2s infinite
 
+        &--stop-bounce
+            animation: none
+            transform: translateY(0)
+            opacity: 0
+            transition: opacity 2s ease
+
     svg
         animation: heroFadeIn 4s forwards
         width: 36px
         height: 36px
-
-    &__scroll-arrow.stop-bounce
-        animation: none
-        transform: translateY(0)
-        opacity: 0
-        transition: opacity 2s ease
 
 @keyframes heroFadeOut
     from

@@ -26,7 +26,7 @@ function Navigation() {
     }, []);
 
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" className={showNav ? "" : "navbar-hidden"}>
+        <Navbar bg="dark" variant="dark" expand="lg" className={showNav ? "navigation" : "navigation--hidden"}>
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <img

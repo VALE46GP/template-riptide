@@ -12,7 +12,7 @@ function ImageModal({ url, onClose }) {
     return (
         <div className="image-modal" style={{ opacity: opacity }}>
             <img src={url} alt="Full Screen" />
-            <button className="close-modal" onClick={onClose}>X</button>
+            <button className="image-modal__close" onClick={onClose}>X</button>
         </div>
     );
 }

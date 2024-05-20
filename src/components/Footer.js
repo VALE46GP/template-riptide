@@ -5,7 +5,7 @@ import './Footer.sass';
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <div>
                 <Link to="/">
                     <img src="https://template-riptide.s3.us-west-1.amazonaws.com/riptide-logo-OLD-white.png" alt="Logo" />

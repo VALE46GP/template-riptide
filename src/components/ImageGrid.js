@@ -8,7 +8,7 @@ function ImageGrid({ imageURLs }) {
     return (
         <div className="image-grid">
             {imageURLs.map((url, index) => (
-                <div key={index} className="image-item" style={{ backgroundImage: `url(${url})` }}
+                <div key={index} className="image-grid__item" style={{ backgroundImage: `url(${url})` }}
                      onClick={() => setModalUrl(url)}>
                 </div>
             ))}

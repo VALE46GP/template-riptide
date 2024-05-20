@@ -22,7 +22,7 @@ function Hero() {
                     </video>
                 </div>
                 <img className="hero__logo" src="https://template-riptide.s3.us-west-1.amazonaws.com/riptide-western-gold.png" alt="Logo" />
-                <div className={`hero__scroll-arrow ${isScrolled ? 'stop-bounce' : ''}`}>
+                <div className={`hero__scroll-arrow ${isScrolled ? 'hero__scroll-arrow--stop-bounce' : ''}`}>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M6 9l6 6 6-6" />
                     </svg>
